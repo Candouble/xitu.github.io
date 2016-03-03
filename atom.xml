@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>xitu</title>
+  <subtitle>Learning &amp; Sharing</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-03-02T15:22:42.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>xitu.io</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript 入坑指南</title>
+    <link href="http://yoursite.com/2016/03/02/tech-js01/"/>
+    <id>http://yoursite.com/2016/03/02/tech-js01/</id>
+    <published>2016-03-02T15:14:40.000Z</published>
+    <updated>2016-03-02T15:22:42.000Z</updated>
+    
+    <content type="html">&lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
+&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
+&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscr
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Slack 的使用</title>
+    <link href="http://yoursite.com/2016/03/02/tools-slack/"/>
+    <id>http://yoursite.com/2016/03/02/tools-slack/</id>
+    <published>2016-03-02T15:08:33.000Z</published>
+    <updated>2016-03-02T15:10:24.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.tuicool.com/articles/VR777fM&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slack完整教学与上手心得：找到正确的团队沟通之道&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slack Help Center&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;基本用法-IM功能&quot;&gt;&lt;a href=&quot;#基本用法-IM功能&quot; class=&quot;headerlink&quot; title=&quot;基本用法: IM功能&quot;&gt;&lt;/a&gt;基本用法: &lt;strong&gt;IM功能&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;cmd + /&lt;/code&gt; 查看快捷键&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/45c97b70-5c58-4766-ae19-80498024c52c.png&quot; alt=&quot;快捷键&quot;&gt; &lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;channel, private channel, direct messages.&lt;br&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us/articles/202931348-Emoji-and-emoticons&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;emoji, 自定义表情&lt;/a&gt;&lt;br&gt;文件上传&lt;br&gt;创建代码片段，写文章&lt;br&gt;文件评论&lt;br&gt;多团队&lt;br&gt;消息收藏、搜寻、过滤与历史记录&lt;/p&gt;
+&lt;p&gt; &lt;a href=&quot;https://get.slack.help/hc/en-us/articles/202288908-Formatting-your-messages&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Formatting your messages&lt;/a&gt;&lt;br&gt; &lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/bf2ed339-434d-4730-96e1-bd4f39ba7b09.png&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
+&lt;h3 id=&quot;高级用法&quot;&gt;&lt;a href=&quot;#高级用法&quot; class=&quot;headerlink&quot; title=&quot;高级用法&quot;&gt;&lt;/a&gt;高级用法&lt;/h3&gt;&lt;h4 id=&quot;App&quot;&gt;&lt;a href=&quot;#App&quot; class=&quot;headerlink&quot; title=&quot;App&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://slack.com/apps&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;App&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;/todo&lt;/strong&gt; : 在slack创建TODO，list&lt;br&gt;&lt;strong&gt;Statsbot&lt;/strong&gt; : 在slack发送统计消息，如Google Analytics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Zeplin&lt;/strong&gt; : 当设计师更新zeplin时，在slack自动给你发消息通知&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: github关联的项目有 commits, pull requests, GitHub Issues 在Slack通知。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dropbox&lt;/strong&gt;： 从Dropbox导入文件，自动同步更新Dropbox文件，分享文件到dropbox。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Uber on Slack&lt;/strong&gt;：在slack打Uber 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Crashlytics&lt;/strong&gt;： 当应用crash的时候slack通知你。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wunderlist&lt;/strong&gt;：和wunderlist结合&lt;/p&gt;
+&lt;h4 id=&quot;自定义&quot;&gt;&lt;a href=&quot;#自定义&quot; class=&quot;headerlink&quot; title=&quot;自定义&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://api.slack.com/custom-integrations&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自定义&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;可以干很多事情，具体看怎么使用了&lt;/p&gt;
+&lt;p&gt;推荐文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wanqu.co/blog/2015-05-24-behind-the-scenes.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;湾区日报是如何运作的？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://colobu.com/2015/11/04/create-a-slack-bot-with-golang/?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Go开发一个 Slack 运维机器人&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.tuicool.com/articles/VR777fM&quot;&gt;Slack完整教学与上手心得：找到正确的团队沟通之道&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot;&gt;Slack Help Center&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;基本用法-IM功能&quot;&gt;&lt;a href=&quot;#基本用法-IM功能&quot; class=&quot;headerlink&quot; title=&quot;基本用法: IM功能&quot;&gt;&lt;/a&gt;基本用法: &lt;strong&gt;IM功能&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;cmd + /&lt;/code&gt; 查看快捷键&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/45c97b70-5c58-4766-ae19-80498024c52c.png&quot; alt=&quot;快捷键&quot;&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>trello 的使用</title>
+    <link href="http://yoursite.com/2016/03/02/tools-trello/"/>
+    <id>http://yoursite.com/2016/03/02/tools-trello/</id>
+    <published>2016-03-02T15:07:37.000Z</published>
+    <updated>2016-03-02T15:08:51.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;团队协作工具&lt;/li&gt;
+&lt;li&gt;任务管理工具&lt;/li&gt;
+&lt;li&gt;工作流(work-flow)管理平台&lt;/li&gt;
+&lt;li&gt;Trello 是一个非常容易使用的 Web 应用，当然他还有 iPhone、iPad、Android 的移动版本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;p&gt;每天早上将自己的任务添加到Trello&lt;/p&gt;
+&lt;p&gt;Trello 支持 Markdown 格式, card 内支持 checklist、截止时间、设置 label 等&lt;/p&gt;
+&lt;p&gt;创建Card：标题（必须），描述，分配人员（必须），label（必须）&lt;/p&gt;
+&lt;p&gt;移动card：当完成一项card的内容后，将card移动到对应的list&lt;/p&gt;
+&lt;h3 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;快捷键&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;?&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;查看快捷键列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;↑ ↓ ← →&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;选择card &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&amp;lt; &amp;gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;移动card &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;n&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;创建新的card&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;space(空格)&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;添加/移除自己到card&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;t&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;编辑 card 的标题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;m&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;给card分配人员&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;@&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;@别人&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;q&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;查看分配给我的card&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;f&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;打开过滤菜单&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;App for Trello for mac&lt;/strong&gt;&lt;br&gt;直接从你的 Mac 菜单栏快速访问Trello主板&lt;/p&gt;
+&lt;p&gt;更多玩法：&lt;a href=&quot;http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20131204125011/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;玩转Trello&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;团队协作工具&lt;/li&gt;
+&lt;li&gt;任务管理工具&lt;/li&gt;
+&lt;li&gt;工作流(work-flow)管理平台&lt;/li&gt;
+&lt;li&gt;Trello 是一个非常容易使用的 Web 应用，当然他还有 iPhone、iPad、Android 的移动版本。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/03/02/hello-world/"/>
+    <id>http://yoursite.com/2016/03/02/hello-world/</id>
+    <published>2016-03-02T09:08:57.000Z</published>
+    <updated>2016-03-02T09:08:57.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
