@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-02T15:22:42.000Z</updated>
+  <updated>2016-03-06T15:57:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,17 +20,35 @@
     <link href="http://yoursite.com/2016/03/02/tech-js01/"/>
     <id>http://yoursite.com/2016/03/02/tech-js01/</id>
     <published>2016-03-02T15:14:40.000Z</published>
-    <updated>2016-03-02T15:22:42.000Z</updated>
+    <updated>2016-03-06T15:57:54.000Z</updated>
     
     <content type="html">&lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
 &lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&quot;&gt;&lt;/a&gt;JavaScript&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;介绍&lt;/li&gt;
+&lt;li&gt;基本语法（变量、数值类型及其表示、字符串、对象、数组、函数、运算符）&lt;/li&gt;
+&lt;li&gt;ES6 / OOP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/javascript/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阮一峰的网络日志-JavaScript系列&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Node-js&quot;&gt;&lt;a href=&quot;#Node-js&quot; class=&quot;headerlink&quot; title=&quot;Node.js&quot;&gt;&lt;/a&gt;Node.js&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Node.js介绍&lt;/li&gt;
+&lt;li&gt;npm&lt;/li&gt;
+&lt;li&gt;Express.js&lt;ul&gt;
+&lt;li&gt;CSS / Sass&lt;/li&gt;
+&lt;li&gt;HTML / jade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/01/npm-install.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;npm 模块安装机制简介&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;Hexo&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/javascript/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官网&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://leopardpan.github.io/2015/08/12/hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HEXO+Github，搭建自己的博客&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
-&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscr
+&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
     
     </summary>
     
