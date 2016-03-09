@@ -314,6 +314,7 @@ body {
   height: 100%;
   position: relative;
   border-bottom: 1px solid #ddd;
+  overflow: hidden;
 }
 #header:before,
 #header:after {
@@ -386,8 +387,7 @@ body {
   margin-top: 16px;
 }
 #main-nav {
-  float: left;
-  margin-left: -15px;
+  float: right;
 }
 .nav-icon,
 .main-nav-link {
@@ -439,7 +439,9 @@ body {
 }
 #sub-nav {
   float: right;
-  margin-right: -15px;
+}
+#tag-box {
+  float: left;
 }
 #nav-rss-link:before {
   content: "\f09e";
@@ -508,10 +510,15 @@ body {
 .search-form-submit:focus {
   color: #777;
 }
+#tag-arrow::before {
+  font-family: FontAwesome;
+  content: '\f060';
+  margin-right: 0.5em;
+}
 .meny {
   background-color: #525252;
   color: #fff;
-  padding: 1em;
+  padding: 2em 1em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
