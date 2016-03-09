@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-06T15:57:54.000Z</updated>
+  <updated>2016-03-09T15:12:49.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML ❤️ CSS</title>
+    <link href="http://yoursite.com/2016/03/09/html-css/"/>
+    <id>http://yoursite.com/2016/03/09/html-css/</id>
+    <published>2016-03-09T14:56:09.000Z</published>
+    <updated>2016-03-09T15:12:49.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;一句话简单概括，HTML是五官，CSS是颜值，JS是表情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;iframe src=&quot;//slides.com/kalasoo/xitu-html-css-tutorial/embed?style=light&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;h2 id=&quot;LEARN-MORE&quot;&gt;&lt;a href=&quot;#LEARN-MORE&quot; class=&quot;headerlink&quot; title=&quot;LEARN MORE&quot;&gt;&lt;/a&gt;LEARN MORE&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tutorials&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://learn.shayhowe.com/html-css&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://learn.shayhowe.com/html-css&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://learn.shayhowe.com/advanced-html-css&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://learn.shayhowe.com/advanced-html-css&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Docs&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://developer.mozilla.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.w3.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.w3.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Keep Updated&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://css-tricks.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tympanus.net/codrops&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://tympanus.net/codrops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.html5rocks.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.html5rocks.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;一句话简单概括，HTML是五官，CSS是颜值，JS是表情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;iframe src=&quot;//slides.com/kalasoo/xitu-html-css-tutorial/embed?style=light&quot; w
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript 入坑指南</title>
     <link href="http://yoursite.com/2016/03/02/tech-js01/"/>
     <id>http://yoursite.com/2016/03/02/tech-js01/</id>
     <published>2016-03-02T15:14:40.000Z</published>
-    <updated>2016-03-06T15:57:54.000Z</updated>
+    <updated>2016-03-09T15:12:56.000Z</updated>
     
     <content type="html">&lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
-&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&quot;&gt;&lt;/a&gt;JavaScript&lt;/h2&gt;&lt;ul&gt;
@@ -48,7 +95,7 @@
     <summary type="html">
     
       &lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
-&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;620&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
     
     </summary>
     
