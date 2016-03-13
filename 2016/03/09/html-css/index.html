@@ -5,61 +5,16 @@
   
   <title>HTML ❤️ CSS | 稀土技术团队博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情
-
-
-
-
-LEARN MORETutorials
-
-http://learn.shayhowe.com/html-css
-http://learn.shayhowe.com/advanced-html-css
-
-Docs
-
-https://developer.mozilla.org
-https://www.w3.org
-
-Keep Upda">
+  <meta name="description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML ❤️ CSS">
 <meta property="og:url" content="http://yoursite.com/2016/03/09/html-css/index.html">
 <meta property="og:site_name" content="稀土技术团队博客">
-<meta property="og:description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情
-
-
-
-
-LEARN MORETutorials
-
-http://learn.shayhowe.com/html-css
-http://learn.shayhowe.com/advanced-html-css
-
-Docs
-
-https://developer.mozilla.org
-https://www.w3.org
-
-Keep Upda">
-<meta property="og:updated_time" content="2016-03-09T15:12:49.000Z">
+<meta property="og:description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情">
+<meta property="og:updated_time" content="2016-03-13T14:35:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML ❤️ CSS">
-<meta name="twitter:description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情
-
-
-
-
-LEARN MORETutorials
-
-http://learn.shayhowe.com/html-css
-http://learn.shayhowe.com/advanced-html-css
-
-Docs
-
-https://developer.mozilla.org
-https://www.w3.org
-
-Keep Upda">
+<meta name="twitter:description" content="一句话简单概括，HTML是五官，CSS是颜值，JS是表情">
   
     <link rel="alternate" href="/atom.xml" title="稀土技术团队博客" type="application/atom+xml">
   
@@ -153,7 +108,20 @@ Keep Upda">
 </blockquote>
 <iframe src="//slides.com/kalasoo/xitu-html-css-tutorial/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
 
-
+<a id="more"></a>
+<h2 id="自定义-Hexo-主题"><a href="#自定义-Hexo-主题" class="headerlink" title="自定义 Hexo 主题"></a>自定义 Hexo 主题</h2><p>当学习了一些HTML、CSS的基础知识之后，我们就可以来自定义我们的Hexo主题了。先看一下 hexo 自带的默认主题 landscape 的目录结构。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">|-- Gruntfile.js</span><br><span class="line">|-- LICENSE</span><br><span class="line">|-- README.md</span><br><span class="line">|-- _config.yml</span><br><span class="line">|-- languages</span><br><span class="line">|-- layout</span><br><span class="line">|   |-- _partial</span><br><span class="line">|   |-- _widget</span><br><span class="line">|   |-- archive.ejs</span><br><span class="line">|   |-- category.ejs</span><br><span class="line">|   |-- index.ejs</span><br><span class="line">|   |-- layout.ejs</span><br><span class="line">|   |-- page.ejs</span><br><span class="line">|   |-- post.ejs</span><br><span class="line">|   `-- tag.ejs</span><br><span class="line">|-- package.json</span><br><span class="line">|-- scripts</span><br><span class="line">|   `-- fancybox.js</span><br><span class="line">`-- source</span><br><span class="line">    |-- css</span><br><span class="line">    |-- fancybox</span><br><span class="line">    `-- js</span><br></pre></td></tr></table></figure>
+<p><strong>_config.yml</strong> 主题的配置文件。修改时会自动更新，无需重启服务器<br><strong>languages</strong> 语言文件夹。用来进行国际化。<br><strong>layout</strong> 布局文件夹。<br><strong>scripts</strong> 脚本文件夹。在启动时，Hexo 会载入此文件夹内的 JavaScript 文件。<br><strong>source</strong> 资源文件夹，除了模板以外的 Asset，例如 CSS、JavaScript 文件等，都应该放在这个文件夹中。文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略。</p>
+<p>如果文件可以被渲染的话，会经过解析然后储存到 public 文件夹，否则会直接拷贝到 public 文件夹。</p>
+<h3 id="修改主题的配色"><a href="#修改主题的配色" class="headerlink" title="修改主题的配色"></a>修改主题的配色</h3><p>明白了每个目录下文件的作用之后，自己就可以进行主题的修改了。先来最简单的主题配色修改。<br>进入 <code>source/css</code> 目录， 打开 <code>_variables.styl</code> 文件。修改起来应该很简单了，只要修改颜色值即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">// Config</span><br><span class="line">support-for-ie = false</span><br><span class="line">vendor-prefixes = webkit moz ms official</span><br><span class="line"></span><br><span class="line">// Colors</span><br><span class="line">color-default = #555</span><br><span class="line">color-grey = #999</span><br><span class="line">color-border = #ddd</span><br><span class="line">color-link = #258fb8</span><br><span class="line">color-background = #eee</span><br><span class="line">color-sidebar-text = #777</span><br><span class="line">color-widget-background = #ddd</span><br><span class="line">color-widget-border = #ccc</span><br><span class="line">color-footer-background = #262a30</span><br><span class="line">color-mobile-nav-background = #191919</span><br><span class="line">color-twitter = #00aced</span><br><span class="line">color-facebook = #3b5998</span><br><span class="line">color-pinterest = #cb2027</span><br><span class="line">color-google = #dd4b39</span><br><span class="line"></span><br><span class="line">// Fonts</span><br><span class="line">font-sans = &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif</span><br><span class="line">font-serif = Georgia, &quot;Times New Roman&quot;, serif</span><br><span class="line">font-mono = &quot;Source Code Pro&quot;, Consolas, Monaco, Menlo, Consolas, monospace</span><br><span class="line">font-icon = FontAwesome</span><br><span class="line">font-icon-path = &quot;fonts/fontawesome-webfont&quot;</span><br><span class="line">font-icon-version = &quot;4.0.3&quot;</span><br><span class="line">font-size = 14px</span><br><span class="line">line-height = 1.6em</span><br><span class="line">line-height-title = 1.1em</span><br><span class="line"></span><br><span class="line">// Header</span><br><span class="line">logo-size = 40px</span><br><span class="line">subtitle-size = 16px</span><br><span class="line">banner-height = 300px</span><br><span class="line">banner-url = &quot;images/banner.jpg&quot;</span><br><span class="line"></span><br><span class="line">sidebar = hexo-config(&quot;sidebar&quot;)</span><br><span class="line"></span><br><span class="line">// Layout</span><br><span class="line">block-margin = 50px</span><br><span class="line">article-padding = 20px</span><br><span class="line">mobile-nav-width = 280px</span><br><span class="line">main-column = 9</span><br><span class="line">sidebar-column = 3</span><br><span class="line"></span><br><span class="line">if sidebar and sidebar isnt bottom</span><br><span class="line">  _sidebar-column = sidebar-column</span><br><span class="line">else</span><br><span class="line">  _sidebar-column = 0</span><br><span class="line"></span><br><span class="line">// Grids</span><br><span class="line">column-width = 80px</span><br><span class="line">gutter-width = 20px</span><br><span class="line">columns = main-column + _sidebar-column</span><br><span class="line"></span><br><span class="line">// Media queries</span><br><span class="line">mq-mobile = &quot;screen and (max-width: 479px)&quot;</span><br><span class="line">mq-tablet = &quot;screen and (min-width: 480px) and (max-width: 767px)&quot;</span><br><span class="line">mq-normal = &quot;screen and (min-width: 768px)&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="修改主题的布局"><a href="#修改主题的布局" class="headerlink" title="修改主题的布局"></a>修改主题的布局</h3><p><strong>layout</strong> 布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，Hexo 内建 Swig 模板引擎，您可以另外安装插件来获得 EJS、Haml 或 Jade 支持，Hexo 根据模板文件的扩展名来决定所使用的模板引擎，例如：<br><code>layout.ejs   - 使用 EJS</code><br><code>layout.swig  - 使用 Swig</code><br>可以看出 landscape 主题使用的 EJS 模板引擎。</p>
+<p>进入 <code>layout/_partial</code> 目录，网页的各个部分的布局文件都在这里。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">|-- after-footer.ejs</span><br><span class="line">|-- archive-post.ejs</span><br><span class="line">|-- archive.ejs</span><br><span class="line">|-- article.ejs</span><br><span class="line">|-- footer.ejs</span><br><span class="line">|-- google-analytics.ejs</span><br><span class="line">|-- head.ejs</span><br><span class="line">|-- header.ejs</span><br><span class="line">|-- mobile-nav.ejs</span><br><span class="line">|-- post</span><br><span class="line">|   |-- category.ejs</span><br><span class="line">|   |-- date.ejs</span><br><span class="line">|   |-- gallery.ejs</span><br><span class="line">|   |-- nav.ejs</span><br><span class="line">|   |-- tag.ejs</span><br><span class="line">|   `-- title.ejs</span><br><span class="line">`-- sidebar.ejs</span><br></pre></td></tr></table></figure>
+<p>代开 <code>footer.ejs</code> 文件，修改一下网页的页脚信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;footer id=&quot;footer&quot;&gt;</span><br><span class="line">  &lt;% if (theme.sidebar === &apos;bottom&apos;)&#123; %&gt;</span><br><span class="line">    &lt;%- partial(&apos;_partial/sidebar&apos;) %&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">  &lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;footer-info&quot; class=&quot;inner&quot;&gt;</span><br><span class="line">      &amp;copy; &lt;%= date(new Date(), &apos;YYYY&apos;) %&gt; &lt;%= config.author || config.title %&gt;&lt;br&gt;</span><br><span class="line">      &lt;%= __(&apos;powered_by&apos;) %&gt; &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;!-- 添加网页信息 --&gt;</span><br><span class="line">    &lt;div&gt;xitu.io&lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/footer&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="修改主题的-JavaScript-脚本"><a href="#修改主题的-JavaScript-脚本" class="headerlink" title="修改主题的 JavaScript 脚本"></a>修改主题的 JavaScript 脚本</h3><p>我们可以自定义一些 <code>JavaScript</code> 脚本放到 <code>source/js</code> 目录下，来定义网页的行为。比如加入图片轮播。<br>或者放到 <code>scripts</code> 目录下，在启动时，Hexo 会载入此文件夹内的 JavaScript 文件。</p>
+<p>扩展阅读：<br><a href="http://www.gruntjs.net/getting-started" target="_blank" rel="external">GRUNT - JavaScript 世界的构建工具</a><br><a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="external">Hexo 主题</a><br><a href="https://www.npmjs.com/package/ejs" target="_blank" rel="external">ejs - Embedded JavaScript templates</a></p>
 <h2 id="LEARN-MORE"><a href="#LEARN-MORE" class="headerlink" title="LEARN MORE"></a>LEARN MORE</h2><p><strong>Tutorials</strong></p>
 <ul>
 <li><a href="http://learn.shayhowe.com/html-css" target="_blank" rel="external">http://learn.shayhowe.com/html-css</a></li>
@@ -174,7 +142,7 @@ Keep Upda">
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/09/html-css/" data-id="cill026kj00019pu5m0j9rf9u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/09/html-css/" data-id="cilqo2jc60002nyu5ef7032yp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
