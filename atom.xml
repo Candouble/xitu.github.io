@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-23T16:51:49.000Z</updated>
+  <updated>2016-03-23T16:56:35.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,34 +20,35 @@
     <link href="http://yoursite.com/2016/03/24/sketch-google-icon/"/>
     <id>http://yoursite.com/2016/03/24/sketch-google-icon/</id>
     <published>2016-03-23T16:45:28.000Z</published>
-    <updated>2016-03-23T16:51:49.000Z</updated>
+    <updated>2016-03-23T16:56:35.000Z</updated>
     
     <content type="html">&lt;p&gt;Sketch 就不做简单介绍了，主要是利用 Sketch 画一个矢量的 Google 的 icon 。&lt;/p&gt;
-&lt;ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;从网上下载一个作为参考。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/b7b14006-506e-4400-a0c7-4f65e96754d9.jpeg&quot; alt=&quot;下载&quot;&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;首先画一个 &lt;strong&gt;圆&lt;/strong&gt; ，去除 &lt;strong&gt;填充&lt;/strong&gt;，留下 &lt;strong&gt;边框&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/7557a2d0-4b8b-4f3e-ad4f-b9aa99f5b600.gif&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;进入 &lt;strong&gt;编辑模式&lt;/strong&gt; ，添加编辑点，复制4份（4个部分）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/8f687016-3427-4e5c-a531-416c01db6c68.gif&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;利用 &lt;strong&gt;剪刀工具&lt;/strong&gt; 剪切成不同部分的线条&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/978bfe0b-41a8-4a66-8d65-b4cce416c4d7.gif&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;填充&lt;/strong&gt; 颜色，调整边框 &lt;strong&gt;粗细&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/73679cd8-129b-40bd-abbe-377a1412212e.gif&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;最终结果&lt;/p&gt;
 &lt;p&gt; &lt;img src=&quot;https://dn-coding-net-production-pp.qbox.me/722cf6d1-4fbc-45f7-b845-dc6be061a3b6.png&quot; alt=&quot;图片&quot;&gt; &lt;/p&gt;
 </content>
@@ -55,9 +56,6 @@
     <summary type="html">
     
       &lt;p&gt;Sketch 就不做简单介绍了，主要是利用 Sketch 画一个矢量的 Google 的 icon 。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;从网上下载一个作为参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://dn-coding-net-production-pp.qbo
     
     </summary>
     
