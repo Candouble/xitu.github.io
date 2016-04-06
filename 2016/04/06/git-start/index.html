@@ -21,7 +21,7 @@
 能够对文件版本控制和多人协作开发拥有强大的分支特性，所以能够灵活地以不同的工作流协同开发分布式版本控制系统，即使协作服务器宕机，也能继续提交代码或文件到本地仓库，当协作服务器恢复正常工作时，再将本地仓库同步到远程仓库。当团队中某个成员完成某个功能时，通过 pull request 操作来通知其他团队成员，其他团队成员能够 code review">
 <meta property="og:image" content="https://git-scm.com/images/logo@2x.png">
 <meta property="og:image" content="http://static.codeceo.com/images/2015/12/git-command-list.png">
-<meta property="og:updated_time" content="2016-04-06T15:55:26.000Z">
+<meta property="og:updated_time" content="2016-04-06T16:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 指南">
 <meta name="twitter:description" content="分布式、版本控制系统， 
@@ -128,9 +128,10 @@
 </ul>
 <p>git 有以下两个特点。</p>
 <ol>
-<li>每个开发机都是一个仓库（Repository） ，代码的提交可以先提交到本地 ，然后再从本地<br>推送到另外一个远程 （Remote）， 也叫做分布式开发。不像 SVN ，只有服务器上有一个 ， 开发机是一个副本，开发机必须和服务器有网连接才能提交。</li>
-<li>每次提交 （Commit）都会生成一个快照 （Snapshot）, 一个快照是所有被修改 文件的一个副本,而不是增量（Delta)。 这决定了 git 的操作速度比快，因为每次分支间的切换不需要根据增量重新算出最终文件,而是直接从快照中提取出文件。</li>
+<li>每个开发机都是一个仓库（Repository），代码的提交可以先提交到本地 ，然后再从本地<br>推送到另外一个远程（Remote）， 也叫做分布式开发。不像 SVN，只有服务器上有一个，开发机是一个副本，开发机必须和服务器有网连接才能提交。</li>
+<li>每次提交 （Commit）都会生成一个快照 （Snapshot），一个快照是所有被修改文件的一个副本，而不是增量（Delta)。 这决定了 git 的操作速度比快，因为每次分支间的切换不需要根据增量重新算出最终文件，而是直接从快照中提取出文件。</li>
 </ol>
+<a id="more"></a>
 <h2 id="git-基本使用"><a href="#git-基本使用" class="headerlink" title="git 基本使用"></a>git 基本使用</h2><p><img src="http://static.codeceo.com/images/2015/12/git-command-list.png" alt=""></p>
 <ul>
 <li>Workspace：工作区 </li>
@@ -163,15 +164,15 @@
 <ul>
 <li><strong>禁止</strong>在<code>master</code>上直接开发<br>均<code>checkout</code>到<code>develop</code>分支做开发，一般建议在<code>develop</code>上修改Bug;</li>
 <li>如果有<strong>新需求</strong>、<strong>大的特性</strong>，建议checkout一个本地分支开发；完成<code>feature</code>后，再<code>merge</code>回<code>develop</code>分支；</li>
-<li>在commit提交代码前，希望再次确认代码（diff一下）修改记录。<br><strong>确保只提交自己修改的代码</strong>，禁止提交其他人修改的代码；<br><strong>确保只提交应该提交的代码</strong>，禁止提交自己调试的代码；<br><strong>需要对自己的任何一个提交负责任</strong>；git log 随时可以倒查谁提交了错误的东西；</li>
+<li>在commit提交代码前，希望再次确认代码（diff一下）修改记录。<strong>确保只提交自己修改的代码</strong>，禁止提交其他人修改的代码；<strong>确保只提交应该提交的代码</strong>，禁止提交自己调试的代码； <code>git log</code> 随时可以查到谁提交了错误的东西；</li>
+<li><strong>git commit的注释信息一定要认真写</strong>，需要对自己的任何一个提交负责任；</li>
 </ul>
-<p>相关链接：</p>
-<p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html" target="_blank" rel="external">http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html</a><br><a href="http://blog.csdn.net/ithomer/article/details/7529022" target="_blank" rel="external">http://blog.csdn.net/ithomer/article/details/7529022</a></p>
+<p>相关链接：<br><a href="http://gold.xitu.io/#/tag/Git" target="_blank" rel="external">掘金-Git标签</a><br><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html" target="_blank" rel="external">git magic</a><br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰 Git 教程</a><br><a href="http://www.jianshu.com/p/87e34894a9f9" target="_blank" rel="external">团队开发 Git 流程</a><br><a href="https://github.com/github/gitignore" target="_blank" rel="external">gitignore 模板</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/06/git-start/" data-id="cimp1dlgz0000u8u5s1rfx6li" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/04/06/git-start/" data-id="cimp1onwt0000z2u5yd88ip4u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
