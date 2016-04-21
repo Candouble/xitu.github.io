@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>稀土每周技术分享-Swift/可视化编程 | 稀土技术团队博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言本次的主题是掘金每周三技术分享,这次轮到我们iOS了现在Swift比较火再加上想向其他端的朋友炫耀一下我们iOS的可视化编程所以这次选择的主题就是:Swift语言+可视化编写掘金主页">
+<meta property="og:type" content="article">
+<meta property="og:title" content="稀土每周技术分享-Swift/可视化编程">
+<meta property="og:url" content="http://yoursite.com/2016/04/21/swift-gold-home/index.html">
+<meta property="og:site_name" content="稀土技术团队博客">
+<meta property="og:description" content="前言本次的主题是掘金每周三技术分享,这次轮到我们iOS了现在Swift比较火再加上想向其他端的朋友炫耀一下我们iOS的可视化编程所以这次选择的主题就是:Swift语言+可视化编写掘金主页">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-515b84f7ecf33e20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-c39dc343f01c5da1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-bcc59a12702589d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-34110e47b4c1cdce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-8e8325ccb442e645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-fb66ae9d285160ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-db3f96eb87ded8fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-c38ca75b1ad2739e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-8b2109b0a9c22a62.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-7207a58c807d3d36.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-f6d3caf66a29ceb3.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-2f43a3caaf1377f4.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1298596-88fc6ce8d3ffdd44.gif?imageMogr2/auto-orient/strip">
+<meta property="og:updated_time" content="2016-04-21T02:44:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="稀土每周技术分享-Swift/可视化编程">
+<meta name="twitter:description" content="前言本次的主题是掘金每周三技术分享,这次轮到我们iOS了现在Swift比较火再加上想向其他端的朋友炫耀一下我们iOS的可视化编程所以这次选择的主题就是:Swift语言+可视化编写掘金主页">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1298596-515b84f7ecf33e20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="稀土技术团队博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div class="meny" style="display: none">
+    
+          <h3 class="meny-title">标签云</h3>
+          <div class="meny-tag-box">
+            <a href="/tags/CSS/" style="font-size: 14px; color: #007fff">CSS</a> <a href="/tags/HTML/" style="font-size: 14px; color: #007fff">HTML</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #007fff">JavaScript</a> <a href="/tags/React-Native/" style="font-size: 14px; color: #007fff">React Native</a> <a href="/tags/Sketch/" style="font-size: 14px; color: #007fff">Sketch</a> <a href="/tags/Swift/" style="font-size: 14px; color: #007fff">Swift</a> <a href="/tags/Vue-js/" style="font-size: 14px; color: #007fff">Vue.js</a> <a href="/tags/git/" style="font-size: 14px; color: #007fff">git</a> <a href="/tags/iOS/" style="font-size: 14px; color: #007fff">iOS</a> <a href="/tags/工具/" style="font-size: 14px; color: rgba(0, 127, 255, 0.5)">工具</a> <a href="/tags/设计/" style="font-size: 14px; color: #007fff">设计</a>
+          </div>
+      
+  </div>
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">稀土技术团队博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Learning &amp; Sharing</a>
+        </h2>
+      
+      <p style="margin: 3em 0;">
+        <iframe src="https://ghbtns.com/github-btn.html?user=xitu&repo=xitu.github.io&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+      </p>
+    </div>
+    <div id="header-inner" class="inner">
+    <nav id="tag-box">
+      <a class="main-nav-link" id="tag-arrow"><span>Tags</span></a>
+    </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-swift-gold-home" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/21/swift-gold-home/" class="article-date">
+  <time datetime="2016-04-21T02:39:40.000Z" itemprop="datePublished">2016-04-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      稀土每周技术分享-Swift/可视化编程
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/1298596-515b84f7ecf33e20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本次的主题是掘金每周三技术分享,这次轮到我们iOS了<br>现在Swift比较火再加上想向其他端的朋友炫耀一下我们iOS的可视化编程所以这次选择的主题就是:<br>Swift语言+可视化编写掘金主页</p>
+<a id="more"></a>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>本次分享由两部分组成<br>第一部分是用<code>Playground</code>来做Swift语法讲解,<code>Playground</code>真的很适合学习语法来使用,在真实开发环境中的作用还比较小…<br>第二部分是用一个真实项目来讲swift语言在真实开发环境中的作用和可视化编程的演示,亮点是用cell的xib自己计算高度</p>
+<h4 id="swfit基础语法"><a href="#swfit基础语法" class="headerlink" title="swfit基础语法"></a>swfit基础语法</h4><p>我对其他语言还不太熟悉,所以我就从OC角度来分析swift</p>
+<blockquote>
+<p>常量和变量</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let a = 10;// 常量</span><br><span class="line">var b = 10;// 变量</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可变数组和不可变数组,对应OC的NSArray和NSMutableArray</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 不可变数组</span><br><span class="line">let arrA = [a,b]</span><br><span class="line"></span><br><span class="line">// 可变数组</span><br><span class="line">var arrB = [a]</span><br><span class="line">arrB.append(b)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>下面是一些数组的黑科技</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 声明一个数组</span><br><span class="line">let arrC = [1,2,3,4,5,6,7,8,9,10]</span><br><span class="line"></span><br><span class="line">// 返回一个数组,值为每个元素是之前的两倍</span><br><span class="line">arrC.map &#123; (i) -&gt; Int in</span><br><span class="line">    return i*2</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 返回数组总和</span><br><span class="line">arrC.reduce(0,combine: +)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>字典</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 不可变字典</span><br><span class="line">let dicA = [&quot;a&quot;:a,&quot;b&quot;:b]</span><br><span class="line"></span><br><span class="line">// 可变字典</span><br><span class="line">var dicB = [&quot;a&quot;:a]</span><br><span class="line">// update类似于以前OC的SetValue ForKey 这里会自动检测是否存在这个key如果存在就是更新操作,如果不存在就是保存操作</span><br><span class="line">dicB.updateValue(b, forKey: &quot;b&quot;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>元祖 这个应该是Swift独有了,可以把它理解为一个不受类型限制的字典,他的两个值可以使任意类型</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 元组</span><br><span class="line">let group:(Int,Array) = (1,arrA)</span><br><span class="line"></span><br><span class="line">// 利用元组交换两个数的值</span><br><span class="line">var c = 1, d = 2</span><br><span class="line">(c,d) = (d,c)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>block</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// block</span><br><span class="line">// block</span><br><span class="line">let block = &#123;(a:String) in print(a)</span><br><span class="line">&#125;</span><br><span class="line">block(&quot;这是一个block&quot;)</span><br><span class="line"></span><br><span class="line">// 带block的函数</span><br><span class="line">typealias myBlock =  (b:String) -&gt;Void</span><br><span class="line">func blockFunction(a:String,block:myBlock)&#123;</span><br><span class="line">    block(b: a)</span><br><span class="line">&#125;</span><br><span class="line">blockFunction(&quot;这是一个带block的函数&quot;) &#123; (aaaaa) in</span><br><span class="line">    print(aaaaa)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>分支和枚举</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">// 分支和枚举</span><br><span class="line">// if else</span><br><span class="line">if a == 10 &#123;</span><br><span class="line"></span><br><span class="line">&#125;else&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// while</span><br><span class="line">while a != 10 &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 普通的枚举</span><br><span class="line">enum studyEnum:Int &#123;</span><br><span class="line">    case enumA = 1,enumB,enumC</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 枚举支持任意类型</span><br><span class="line">enum specialEnum:String &#123;</span><br><span class="line">    case 吃了吗 = &quot;吃了吗&quot;</span><br><span class="line">    case 没吃呢 = &quot;没吃呢&quot;</span><br><span class="line">    case 该吃💊了 = &quot;该吃💊了&quot;</span><br><span class="line">&#125;</span><br><span class="line">// 通过字符串创建枚举,创建后自带optional</span><br><span class="line">let specialEnumAAA = specialEnum(rawValue:&quot;该吃💊了&quot;)</span><br><span class="line"></span><br><span class="line">// switch</span><br><span class="line">// 可选值 需要拆包 optional后面讲解</span><br><span class="line">switch specialEnumAAA! &#123;</span><br><span class="line">    case .吃了吗:</span><br><span class="line"></span><br><span class="line">        break</span><br><span class="line">    case .没吃呢:</span><br><span class="line">    </span><br><span class="line">        break</span><br><span class="line">    case .该吃💊了:</span><br><span class="line">        print(specialEnumAAA!.rawValue)</span><br><span class="line">        break</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>函数和类</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">// 类</span><br><span class="line">class ClassA: NSObject &#123;</span><br><span class="line">    let a:String!</span><br><span class="line">    override init() &#123;</span><br><span class="line">        a = &quot;10&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let classA = ClassA()</span><br><span class="line"></span><br><span class="line">// 函数</span><br><span class="line">func thisIsAFuncthion(a:String)&#123;</span><br><span class="line">    print(a)</span><br><span class="line">&#125;</span><br><span class="line">thisIsAFuncthion(&quot;这是一个函数&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 函数式</span><br><span class="line">// Swift中函数是一个一等值</span><br><span class="line">// 代表着在swift中可以把一个函数当做参数来使用</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func functionPrograming(strA:String) -&gt; (str:String) -&gt; String &#123;</span><br><span class="line">    </span><br><span class="line">    func sayHello(strB:String) -&gt; String &#123;</span><br><span class="line">        return strB + &quot;,&quot; + strA</span><br><span class="line">    &#125;</span><br><span class="line">    return sayHello</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let funcA = functionPrograming(&quot;World&quot;)</span><br><span class="line">funcA(str: &quot;你好&quot;)</span><br><span class="line">funcA(str: &quot;Hello&quot;)</span><br><span class="line">functionPrograming(&quot;World&quot;)(str:&quot;你好&quot;)</span><br><span class="line"></span><br><span class="line">// 上边那个函数可以这样写,结合block可能好理解一些</span><br><span class="line">typealias StrAddStr = (str:String) -&gt; String</span><br><span class="line">func functionProgramingB(strA:String) -&gt; StrAddStr &#123;</span><br><span class="line">    // strB:第二个函数传进来的参数</span><br><span class="line">    return &#123; strB in</span><br><span class="line">        return strB + &quot;,&quot; + strA</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可选值,这是swift的新特性,每个可能为空的值都在外名包一层optional,用来保证安全</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 可选值</span><br><span class="line">let str:String?</span><br><span class="line">let number:Int?</span><br><span class="line">let float:Float?</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">str = &quot;这是一个可选值&quot;</span><br><span class="line">print(str)</span><br><span class="line"></span><br><span class="line">// 两种拆包方法</span><br><span class="line">// if let 解包,拆包出来的值作用于在if里</span><br><span class="line">if let a = str &#123;</span><br><span class="line">    print(a)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//guard 解包,拆除来的值在之后都可以用,else&#123;&#125;里只执行没有值得方法</span><br><span class="line">// return在playground里面无法使用,之后会在项目中演示</span><br><span class="line">//guard let StrA = str else&#123;</span><br><span class="line">// return</span><br><span class="line">//&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>playground中演示一下创建控件</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// UIKit框架</span><br><span class="line">let view = UIView(frame: CGRectMake(0,0,200,100))</span><br><span class="line">view.backgroundColor = UIColor.lightGrayColor()</span><br><span class="line">let label = UILabel(frame:  CGRectMake(0,0,100,50))</span><br><span class="line">label.center = view.center</span><br><span class="line">label.font = UIFont.systemFontOfSize(15)</span><br><span class="line">label.text = &quot;这是一个标题&quot;</span><br><span class="line">view.addSubview(label)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果图</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-c39dc343f01c5da1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="可视化编程"><a href="#可视化编程" class="headerlink" title="可视化编程"></a>可视化编程</h4><p>可视化这部分主要讲的就是用Xib和StoaryBoard来创建控件并和代码结合使用<br>亮点是用Xib创建的Cell自己来计算cell的高度</p>
+<blockquote>
+<p>先创建一个工程,选择Single View Application,选择swfit语言</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-bcc59a12702589d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>然后创建podfile,它类似于js的nam和其他语言的包管理,然后在命令行里选择工程路径 输入pod install 指令导入包</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-34110e47b4c1cdce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>然后打开workSpace选择Main.storyboard删除原来的控制器创建一个Table View Controller</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-8e8325ccb442e645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>,然后在工程里创建一个继承自UITableViewController的类与之关联</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-fb66ae9d285160ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-db3f96eb87ded8fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-c38ca75b1ad2739e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>讲解一下tableView里面的代码,里面所牵扯的一些其他代码可以去相对应的类中去看</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class XTHomeTableViewController: UITableViewController &#123;</span><br><span class="line"></span><br><span class="line">    var dataArr:Array&lt;EntryModel&gt; = []</span><br><span class="line">    </span><br><span class="line">    // 页面加载时会调用的方法</span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        // 执行一下父类的方法</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        </span><br><span class="line">        // 从网络获取数据</span><br><span class="line">        Helper.sharedInstance.fetchHotEntry(0) &#123; (buyers) in</span><br><span class="line">            // 将自己持有的数组等于网络请求的数组</span><br><span class="line">            self.dataArr = buyers</span><br><span class="line">            // 获取玩数据刷新页面</span><br><span class="line">            self.tableView.reloadData()</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        // 让tableView的Cell高度按照可视化的约束来赋值</span><br><span class="line">        self.tableView.rowHeight = UITableViewAutomaticDimension;</span><br><span class="line">        // 注册cell</span><br><span class="line">        self.tableView.registerNib(UINib.init(nibName: &quot;XTHomeCell&quot;, bundle: nil), forCellReuseIdentifier: &quot;XTHomeCell&quot;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // MARK: - Table view data source</span><br><span class="line">    // 区数</span><br><span class="line">    override func numberOfSectionsInTableView(tableView: UITableView) -&gt; Int &#123;</span><br><span class="line">        // #warning Incomplete implementation, return the number of sections</span><br><span class="line">        return dataArr.count</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 行数</span><br><span class="line">    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int &#123;</span><br><span class="line">        // #warning Incomplete implementation, return the number of rows</span><br><span class="line">        return 1</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 预估cell高度,方便xib自己计算高度 并提高性能</span><br><span class="line">    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat &#123;</span><br><span class="line">        // 预估cell高度</span><br><span class="line">        return 246</span><br><span class="line">    &#125;</span><br><span class="line">    // 区尾高度,cell间留白效果</span><br><span class="line">    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat &#123;</span><br><span class="line">        return 10</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 返回cell</span><br><span class="line">    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell &#123;</span><br><span class="line">        let cell = tableView.dequeueReusableCellWithIdentifier(&quot;XTHomeCell&quot;, forIndexPath: indexPath) as! XTHomeCell</span><br><span class="line">        cell.setEntryModel(dataArr[indexPath.section])</span><br><span class="line">        return cell</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 点击事件</span><br><span class="line">    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">       </span><br><span class="line">        // 根据给的identifier,来从stoaryBoard中找到需要跳转到的控制器</span><br><span class="line">        let url = dataArr[indexPath.section].urlStr</span><br><span class="line">        self.performSegueWithIdentifier(segue_webVC, sender:url)</span><br><span class="line">    &#125;</span><br><span class="line">    // 根据给的identifier,来从stoaryBoard中找到需要跳转到的控制器</span><br><span class="line">    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) &#123;</span><br><span class="line">        // 取出下一个控制器并赋值</span><br><span class="line">        if segue.identifier == segue_webVC &#123;</span><br><span class="line">            let webVC = segue.destinationViewController as! XTEntryDetialViewController</span><br><span class="line">            // 一个可选值,可能为空</span><br><span class="line">            webVC.str = sender as? String</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    override func didReceiveMemoryWarning() &#123;</span><br><span class="line">        super.didReceiveMemoryWarning()</span><br><span class="line">        // Dispose of any resources that can be recreated.</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>cell,这里会用几个gif图来详细演示一下cell通过可视化自己计算高度的操作</p>
+<p>拖入控件</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-8b2109b0a9c22a62.gif?imageMogr2/auto-orient/strip" alt=""></p>
+<blockquote>
+<p>普通约束</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-7207a58c807d3d36.gif?imageMogr2/auto-orient/strip" alt="普通约束.gif"></p>
+<blockquote>
+<p>计算高度所需要约束</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-f6d3caf66a29ceb3.gif?imageMogr2/auto-orient/strip" alt="计算高度所需要的约束.gif"></p>
+<blockquote>
+<p>然后是控件连线</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1298596-2f43a3caaf1377f4.gif?imageMogr2/auto-orient/strip" alt=""></p>
+<blockquote>
+<p>然后只需要在cell里面写赋值方法就可以了</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  func setEntryModel(entry:EntryModel)&#123;</span><br><span class="line">    // sd方法是管理图片下载的第三方,会自动缓存和取缓存,还做了一些线程优化</span><br><span class="line">    entryimageView.sd_setImageWithURL(entry.screenshot)</span><br><span class="line">    avatarImage.sd_setImageWithURL(entry.userAvatar)</span><br><span class="line">    titleLabel.text = entry.title</span><br><span class="line">    detailLabel.text = entry.content</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 约束完了tableView里面写预估高度和这个方法,就可以让cell自己计算自己的高度了</span><br><span class="line">self.tableView.rowHeight = UITableViewAutomaticDimension;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其他代码,Model</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class EntryModel: AVObject &#123;</span><br><span class="line">    var title:String? // 标题</span><br><span class="line">    var content:String? // 描述</span><br><span class="line">    var urlStr:String? // 网页url</span><br><span class="line">    var userAvatar:NSURL? // 头像</span><br><span class="line">    var screenshot:NSURL? // 顶部图片</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其他代码,网络层</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">typealias buyersBlock = (buyers:Array&lt;EntryModel&gt;) -&gt; Void</span><br><span class="line">class Helper: NSObject &#123;</span><br><span class="line">    static let sharedInstance = Helper()</span><br><span class="line">    private override init() &#123;&#125;</span><br><span class="line">    // leanCloud网络请求</span><br><span class="line">    func fetchHotEntry(page:Int,callBack:buyersBlock)&#123;</span><br><span class="line">        let query = AVQuery(className: entry_className)</span><br><span class="line">        query.limit = 20</span><br><span class="line">        query.skip = 20*page</span><br><span class="line">        query .orderByDescending(&quot;hotIndex&quot;)</span><br><span class="line">        query.includeKey(&quot;user&quot;)</span><br><span class="line">        // 缓存</span><br><span class="line">        query.cachePolicy = .CacheElseNetwork;</span><br><span class="line">        query.findObjectsInBackgroundWithBlock &#123; (objs, error) in</span><br><span class="line">            if error != nil &#123;</span><br><span class="line">                return</span><br><span class="line">            &#125;</span><br><span class="line">            callBack(buyers: self.resolveEntryWithObjs(objs))</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // 取一些自己想用的值</span><br><span class="line">    func resolveEntryWithObjs(objs:[AnyObject!]) -&gt; Array&lt;EntryModel&gt;&#123;</span><br><span class="line">        var arr:Array&lt;EntryModel&gt; = []</span><br><span class="line">        for obj in objs&#123;</span><br><span class="line">            let dic = (obj as! AVObject).dictionaryForObject()</span><br><span class="line">            let entry = EntryModel(className: entry_className)</span><br><span class="line">            entry.content = dic.valueForKey(&quot;content&quot;) as? String</span><br><span class="line">            entry.title = dic.valueForKey(&quot;title&quot;) as? String</span><br><span class="line">            entry.urlStr = dic.valueForKey(&quot;url&quot;) as? String</span><br><span class="line">            let imageUrlStr = dic.valueForKey(&quot;screenshot&quot;)?.valueForKey(&quot;url&quot;) as? String</span><br><span class="line">            entry.screenshot = NSURL(string: imageUrlStr!)</span><br><span class="line">            let userAvatar = dic.valueForKey(&quot;user&quot;)?.valueForKey(&quot;avatar_large&quot;) as? String</span><br><span class="line">            if let urlStr =  userAvatar&#123;</span><br><span class="line">                entry.userAvatar =  NSURL(string: urlStr)</span><br><span class="line">            &#125;</span><br><span class="line">            arr.append(entry)</span><br><span class="line">        &#125;</span><br><span class="line">        return arr</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src="http://upload-images.jianshu.io/upload_images/1298596-88fc6ce8d3ffdd44.gif?imageMogr2/auto-orient/strip" alt=""></p>
+<h3 id="代码-https-github-com-Lafree317-SwiftGoldHome"><a href="#代码-https-github-com-Lafree317-SwiftGoldHome" class="headerlink" title="代码:https://github.com/Lafree317/SwiftGoldHome"></a>代码:<a href="https://github.com/Lafree317/SwiftGoldHome" target="_blank" rel="external">https://github.com/Lafree317/SwiftGoldHome</a></h3><p>可视化这边不太好用文字描述,如果将的不清楚可以私信我,或者去demo里面自己研究一下,希望各个水平的同学都可以从本次分享了解一些自己想要了解的东西…<br>本人是掘金iOS打杂的..水平菜,轻喷…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/04/21/swift-gold-home/" data-id="cin9om3sy0005qdu5wi99pmcp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Swift/">Swift</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/13/vuejs/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Vue.js 的组件化编程</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 xitu.io<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/meny.js"></script>
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
