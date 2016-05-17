@@ -8,7 +8,7 @@ tags:
 ## 传统后台架构
 
  ### 上古时代
-![上古时代](http://upload-images.jianshu.io/upload_images/931251-4fbfc489cb120a16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![上古时代](http://covteam.u.qiniudn.com/1.png)
 
 ```
 <!DOCTYPE html>
@@ -48,15 +48,15 @@ $conn->close();
 这种模式非常适合创业型小项目，不分前后端，经常 3-5 人搞定所有开发。页面由 JSP、PHP 等工程师在服务端生成，浏览器负责展现。基本上是服务端给什么浏览器就展现什么，展现的控制在Server 层。
 
 ### 后端MVC时代
-![e2.png](http://upload-images.jianshu.io/upload_images/931251-ef92f22e5bed2be1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![e2.png](http://covteam.u.qiniudn.com/2.png)
 为了降低复杂度，以后端为出发点，有了 Web Server 层的架构升级，比如 thinkPHP 、Laravel、 Spring MVC 等。
 
 ### Ajax时代
-![e3.png](http://upload-images.jianshu.io/upload_images/931251-a809a12e5002d3b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![e3.png](http://covteam.u.qiniudn.com/3.png)
 XMLHttpRequest异步调用服务器端来获取数据，并将数据应用在客户端，实现了无刷新的效果，这使得Google Maps依赖其极好的用户体验获取了巨大的成功，Ajax这个概念开始火爆，SPA （Single Page Application 单页面应用）时代就开始了。
 
 ### 前端 MV* 时代 
-![e4.png](http://upload-images.jianshu.io/upload_images/931251-e5a8193bf580852f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![e4.png](http://covteam.u.qiniudn.com/4.png)
 为了降低前端开发复杂度，除了 Backbone，还有大量框架涌现，比如 EmberJS、KnockoutJS、AngularJS、Vue、React等等。
 
 好处很明显：
@@ -72,7 +72,7 @@ XMLHttpRequest异步调用服务器端来获取数据，并将数据应用在客
 前端为主的 MV* 模式解决了很多很多问题，但如上所述，依旧存在不少不足之处。随着 Node.js 的兴起，JavaScript 开始有能力运行在服务端。
 
 React 同构渲染
-![975d4efef933f05fc62a68d27e36e11a_r.png](http://upload-images.jianshu.io/upload_images/931251-8598833fae300cc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![975d4efef933f05fc62a68d27e36e11a_r.png](http://covteam.u.qiniudn.com/5.png)
 Koa+React
 
 有了服务端渲染的基础，后端和前端的路由也可以做到统一。
@@ -80,7 +80,7 @@ Koa+React
 
 ## 引入NodeJS实现前后端分离
  
-![51d06ddc3f781892df0a19a053c249bb5d0a4108.jpg](http://upload-images.jianshu.io/upload_images/931251-4066d673a8cb8361.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![51d06ddc3f781892df0a19a053c249bb5d0a4108.jpg](http://covteam.u.qiniudn.com/6.jpg)
 
 - 为什么要前后端分离？
 
@@ -91,7 +91,7 @@ Koa+React
 前端：负责视图和交互层。
 后端：负责Model层，业务处理/数据等。
 
-![e6.png](http://upload-images.jianshu.io/upload_images/931251-e32efd91b5a24d5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![e6.png](http://covteam.u.qiniudn.com/7.png)
 
 ## 掘金的架构
 
@@ -101,7 +101,7 @@ leancloud 是核心功能基于 Clojure 开发的云端数据存储解决方案�
 
 - 掘金前后端架构
 
-![e5.png](http://upload-images.jianshu.io/upload_images/931251-408832150f2a5ea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![e5.png](http://covteam.u.qiniudn.com/8.png)
 掘金使用了Vue作为核心的前端框架，部署在leancloud云引擎的Nodejs服务器做为API服务器。Nodejs直接对接以json为数据模型的Leancloud。
 
 
