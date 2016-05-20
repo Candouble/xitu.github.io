@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-27T15:35:08.000Z</updated>
+  <updated>2016-05-20T07:36:37.882Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,111 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>网页布局那些事 -- flex 布局简介</title>
+    <link href="http://yoursite.com/2016/05/20/flex-layout/"/>
+    <id>http://yoursite.com/2016/05/20/flex-layout/</id>
+    <published>2016-05-20T07:22:36.000Z</published>
+    <updated>2016-05-20T07:36:37.882Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;web&lt;/strong&gt; 的 &lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;flex&lt;/a&gt;&lt;br&gt;&lt;strong&gt;react-native&lt;/strong&gt; 的 &lt;a href=&quot;http://facebook.github.io/react-native/docs/flexbox.html#content&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flexbox&lt;/a&gt;&lt;br&gt;&lt;strong&gt;android&lt;/strong&gt; 的 &lt;a href=&quot;https://github.com/google/flexbox-layout&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;flex-layout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&quot;https://docs.google.com/presentation/d/1BHp34BHb_n1Z1PXvcE2k3KLw73IUaEZaVoQYx_JhYXI/embed?start=false&amp;loop=false&amp;delayms=30000&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&amp;lt;&lt;/iframe&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;web&lt;/strong&gt; 的 &lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;flex&lt;/a&gt;&lt;br&gt;&lt;strong
+    
+    </summary>
+    
+    
+      <category term="flex" scheme="http://yoursite.com/tags/flex/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web 进化</title>
+    <link href="http://yoursite.com/2016/05/11/history-of-web/"/>
+    <id>http://yoursite.com/2016/05/11/history-of-web/</id>
+    <published>2016-05-11T04:54:03.000Z</published>
+    <updated>2016-05-20T07:21:32.841Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;传统后台架构&quot;&gt;&lt;a href=&quot;#传统后台架构&quot; class=&quot;headerlink&quot; title=&quot;传统后台架构&quot;&gt;&lt;/a&gt;传统后台架构&lt;/h2&gt;&lt;h3 id=&quot;上古时代&quot;&gt;&lt;a href=&quot;#上古时代&quot; class=&quot;headerlink&quot; title=&quot;上古时代&quot;&gt;&lt;/a&gt;上古时代&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/1.png&quot; alt=&quot;上古时代&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$servername = &amp;quot;localhost&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$username = &amp;quot;username&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$password = &amp;quot;password&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$dbname = &amp;quot;myDB&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// Create connection&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$conn = new mysqli($servername, $username, $password, $dbname);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// Check connection&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if ($conn-&amp;gt;connect_error) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    die(&amp;quot;Connection failed: &amp;quot; . $conn-&amp;gt;connect_error);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$sql = &amp;quot;SELECT id, firstname, lastname FROM MyGuests&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$result = $conn-&amp;gt;query($sql);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if ($result-&amp;gt;num_rows &amp;gt; 0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // output data of each row&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    while($row = $result-&amp;gt;fetch_assoc()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        echo &amp;quot;&amp;lt;div&amp;gt; id: &amp;quot; . $row[&amp;quot;id&amp;quot;]. &amp;quot; - Name: &amp;quot; . $row[&amp;quot;firstname&amp;quot;]. &amp;quot; &amp;quot; . $row[&amp;quot;lastname&amp;quot;]. &amp;quot;&amp;lt;/div&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    echo &amp;quot;0 results&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$conn-&amp;gt;close();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这种模式非常适合创业型小项目，不分前后端，经常 3-5 人搞定所有开发。页面由 JSP、PHP 等工程师在服务端生成，浏览器负责展现。基本上是服务端给什么浏览器就展现什么，展现的控制在Server 层。&lt;/p&gt;
+&lt;h3 id=&quot;后端MVC时代&quot;&gt;&lt;a href=&quot;#后端MVC时代&quot; class=&quot;headerlink&quot; title=&quot;后端MVC时代&quot;&gt;&lt;/a&gt;后端MVC时代&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/2.png&quot; alt=&quot;e2.png&quot;&gt;&lt;br&gt;为了降低复杂度，以后端为出发点，有了 Web Server 层的架构升级，比如 thinkPHP 、Laravel、 Spring MVC 等。&lt;/p&gt;
+&lt;h3 id=&quot;Ajax时代&quot;&gt;&lt;a href=&quot;#Ajax时代&quot; class=&quot;headerlink&quot; title=&quot;Ajax时代&quot;&gt;&lt;/a&gt;Ajax时代&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/3.png&quot; alt=&quot;e3.png&quot;&gt;&lt;br&gt;XMLHttpRequest异步调用服务器端来获取数据，并将数据应用在客户端，实现了无刷新的效果，这使得Google Maps依赖其极好的用户体验获取了巨大的成功，Ajax这个概念开始火爆，SPA （Single Page Application 单页面应用）时代就开始了。&lt;/p&gt;
+&lt;h3 id=&quot;前端-MV-时代&quot;&gt;&lt;a href=&quot;#前端-MV-时代&quot; class=&quot;headerlink&quot; title=&quot;前端 MV* 时代&quot;&gt;&lt;/a&gt;前端 MV* 时代&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/4.png&quot; alt=&quot;e4.png&quot;&gt;&lt;br&gt;为了降低前端开发复杂度，除了 Backbone，还有大量框架涌现，比如 EmberJS、KnockoutJS、AngularJS、Vue、React等等。&lt;/p&gt;
+&lt;p&gt;好处很明显：&lt;br&gt;1、&lt;strong&gt;前后端职责很清晰。&lt;/strong&gt;前端工作在浏览器端，后端工作在服务端。清晰的分工，可以让开发并行，测试数据的模拟不难，前端可以本地开发。后端则可以专注于业务逻辑的处理，输出 RESTful 等接口。&lt;br&gt;2、&lt;strong&gt;前端开发的复杂度可控。&lt;/strong&gt;前端代码很重，但合理的分层，让前端代码能各司其职。这一块蛮有意思的，简单如模板特性的选择，就有很多很多讲究。并非越强大越好，限制什么，留下哪些自由，代码应该如何组织，所有这一切设计，得花一本的厚度去说明。&lt;br&gt;3、&lt;strong&gt;部署相对独立&lt;/strong&gt;，产品体验可以快速改进。&lt;br&gt;但依旧有不足之处：&lt;br&gt;1、代码不能复用。比如后端依旧需要对数据做各种校验，校验逻辑无法复用浏览器端的代码。如果可以复用，那么后端的数据校验可以相对简单化。2、全异步，对 SEO 不利。往往还需要服务端做同步渲染的降级方案。&lt;br&gt;3、性能并非最佳，特别是移动互联网环境下。&lt;br&gt;4、SPA 不能满足所有需求，依旧存在大量多页面应用。URL Design 需要后端配合，前端无法完全掌控。&lt;/p&gt;
+&lt;h2 id=&quot;Node全栈-amp-同构&quot;&gt;&lt;a href=&quot;#Node全栈-amp-同构&quot; class=&quot;headerlink&quot; title=&quot;Node全栈&amp;amp;同构&quot;&gt;&lt;/a&gt;Node全栈&amp;amp;同构&lt;/h2&gt;&lt;p&gt;前端为主的 MV* 模式解决了很多很多问题，但如上所述，依旧存在不少不足之处。随着 Node.js 的兴起，JavaScript 开始有能力运行在服务端。&lt;/p&gt;
+&lt;p&gt;React 同构渲染&lt;br&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/5.png&quot; alt=&quot;975d4efef933f05fc62a68d27e36e11a_r.png&quot;&gt;&lt;br&gt;Koa+React&lt;/p&gt;
+&lt;p&gt;有了服务端渲染的基础，后端和前端的路由也可以做到统一。&lt;br&gt;同构的实现弥补了前面提到的单纯前端实现的SPA的提到前后端代码复用，SEO，URL Design这些问题。&lt;/p&gt;
+&lt;h2 id=&quot;引入NodeJS实现前后端分离&quot;&gt;&lt;a href=&quot;#引入NodeJS实现前后端分离&quot; class=&quot;headerlink&quot; title=&quot;引入NodeJS实现前后端分离&quot;&gt;&lt;/a&gt;引入NodeJS实现前后端分离&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/6.jpg&quot; alt=&quot;51d06ddc3f781892df0a19a053c249bb5d0a4108.jpg&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么要前后端分离？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于之前的Web基本上都是基于后端的MVC框架，架构决定了前端只能依赖后端。前端写好静态demo，然后根据分工前端或者后端改写成相应的模版语言，比如 blade，smarty等等。这种基于后端环境开发是很痛苦和低效率的，后端没法摆脱对展现的强关注，从而专心于业务逻辑层的开发，前端也吐槽后端乱改他们的代码。所以加上一个nodejs中间层来分离。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;怎么做前后端分离？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前端：负责视图和交互层。&lt;br&gt;后端：负责Model层，业务处理/数据等。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/7.png&quot; alt=&quot;e6.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;掘金的架构&quot;&gt;&lt;a href=&quot;#掘金的架构&quot; class=&quot;headerlink&quot; title=&quot;掘金的架构&quot;&gt;&lt;/a&gt;掘金的架构&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;leancloud&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;leancloud 是核心功能基于 Clojure 开发的云端数据存储解决方案，不同于传统关系型数据库，提供了标准的 REST API 和在其上封装的各平台的 SDK，数据对象以 JSON 格式随存随取，全平台支持数据增删改查操作。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;掘金前后端架构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://covteam.u.qiniudn.com/8.png&quot; alt=&quot;e5.png&quot;&gt;&lt;br&gt;掘金使用了Vue作为核心的前端框架，部署在leancloud云引擎的Nodejs服务器做为API服务器。Nodejs直接对接以json为数据模型的Leancloud。&lt;/p&gt;
+&lt;p&gt;参考&lt;br&gt;&lt;a href=&quot;https://github.com/lifesinger/blog/issues/184&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/lifesinger/blog/issues/184&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/20669111&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zhuanlan.zhihu.com/p/20669111&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;传统后台架构&quot;&gt;&lt;a href=&quot;#传统后台架构&quot; class=&quot;headerlink&quot; title=&quot;传统后台架构&quot;&gt;&lt;/a&gt;传统后台架构&lt;/h2&gt;&lt;h3 id=&quot;上古时代&quot;&gt;&lt;a href=&quot;#上古时代&quot; class=&quot;headerlink&quot; title=&quot;上
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 简介</title>
+    <link href="http://yoursite.com/2016/05/04/python/"/>
+    <id>http://yoursite.com/2016/05/04/python/</id>
+    <published>2016-05-04T14:38:50.000Z</published>
+    <updated>2016-05-20T07:21:32.850Z</updated>
+    
+    <content type="html">&lt;p&gt;Python 是一门简单的语言，很适合初学者学习。&lt;/p&gt;
+&lt;iframe src=&quot;//slides.com/hanks/deck-4/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;另一个比较详细的介绍 Python&lt;/p&gt;
+&lt;iframe src=&quot;//slides.com/hanks/python/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 是一门简单的语言，很适合初学者学习。&lt;/p&gt;
+&lt;iframe src=&quot;//slides.com/hanks/deck-4/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Kotlin 简介</title>
     <link href="http://yoursite.com/2016/04/27/kotlin/"/>
     <id>http://yoursite.com/2016/04/27/kotlin/</id>
     <published>2016-04-27T15:29:52.000Z</published>
-    <updated>2016-04-27T15:35:08.000Z</updated>
+    <updated>2016-05-20T07:21:32.847Z</updated>
     
     <content type="html">&lt;iframe src=&quot;//slides.com/next___/kotlin/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </content>
@@ -165,7 +265,7 @@
     <link href="http://yoursite.com/2016/04/13/vuejs/"/>
     <id>http://yoursite.com/2016/04/13/vuejs/</id>
     <published>2016-04-13T15:25:21.000Z</published>
-    <updated>2016-04-13T15:34:15.000Z</updated>
+    <updated>2016-04-13T15:34:16.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Reactive Components for Modern Web Interfaces&lt;br&gt;数据驱动的组件，为现代化的 Web 界面而生&lt;/p&gt;
@@ -201,7 +301,7 @@
     <link href="http://yoursite.com/2016/04/06/git-start/"/>
     <id>http://yoursite.com/2016/04/06/git-start/</id>
     <published>2016-04-06T15:54:03.000Z</published>
-    <updated>2016-04-06T16:03:57.000Z</updated>
+    <updated>2016-04-06T16:03:58.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;https://git-scm.com/images/logo@2x.png&quot; alt=&quot;git&quot;&gt;&lt;br&gt;分布式、版本控制系统， &lt;/p&gt;
 &lt;ul&gt;
@@ -306,7 +406,7 @@
     <link href="http://yoursite.com/2016/03/24/sketch-google-icon/"/>
     <id>http://yoursite.com/2016/03/24/sketch-google-icon/</id>
     <published>2016-03-23T16:45:28.000Z</published>
-    <updated>2016-03-23T16:56:35.000Z</updated>
+    <updated>2016-03-23T16:56:36.000Z</updated>
     
     <content type="html">&lt;p&gt;Sketch 就不做简单介绍了，主要是利用 Sketch 画一个矢量的 Google 的 icon 。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -417,7 +517,7 @@
     <link href="http://yoursite.com/2016/03/02/tech-js01/"/>
     <id>http://yoursite.com/2016/03/02/tech-js01/</id>
     <published>2016-03-02T15:14:40.000Z</published>
-    <updated>2016-03-09T15:12:56.000Z</updated>
+    <updated>2016-05-20T07:21:32.856Z</updated>
     
     <content type="html">&lt;p&gt;先放上前端小哥分享的ppt&lt;/p&gt;
 &lt;iframe src=&quot;//slides.com/hiawe/deck/embed&quot; width=&quot;100%&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -459,7 +559,7 @@
     <link href="http://yoursite.com/2016/03/02/tools-slack/"/>
     <id>http://yoursite.com/2016/03/02/tools-slack/</id>
     <published>2016-03-02T15:08:33.000Z</published>
-    <updated>2016-03-02T15:10:24.000Z</updated>
+    <updated>2016-05-20T07:21:32.864Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.tuicool.com/articles/VR777fM&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slack完整教学与上手心得：找到正确的团队沟通之道&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://get.slack.help/hc/en-us&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slack Help Center&lt;/a&gt;&lt;/p&gt;
@@ -502,7 +602,7 @@
     <link href="http://yoursite.com/2016/03/02/tools-trello/"/>
     <id>http://yoursite.com/2016/03/02/tools-trello/</id>
     <published>2016-03-02T15:07:37.000Z</published>
-    <updated>2016-03-02T15:08:52.000Z</updated>
+    <updated>2016-05-20T07:21:32.873Z</updated>
     
     <content type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;团队协作工具&lt;/li&gt;
@@ -582,33 +682,6 @@
     
     
       <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/03/02/hello-world/"/>
-    <id>http://yoursite.com/2016/03/02/hello-world/</id>
-    <published>2016-03-02T09:08:58.000Z</published>
-    <updated>2016-03-02T09:08:58.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
     
   </entry>
   
