@@ -2,6 +2,7 @@
 
 <audio controls="controls" style="width:700px;height:66px;">
             <source src="http://7xjzr6.com2.z0.glb.qiniucdn.com/Vue-Podcast-Release.mp3" type="audio/mp3" />
+            <embed height="66px" width="700px" src="http://7xjzr6.com2.z0.glb.qiniucdn.com/Vue-Podcast-Release.mp3" />
 </audio>
 
 [下载音频](http://pan.baidu.com/s/1eRF3oR4)
