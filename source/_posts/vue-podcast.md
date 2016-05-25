@@ -2,8 +2,9 @@
 title: Vue.js Podcast 活动总结
 date: 2016-05-25 18:21:45
 tags:
-- Vue.js Podcast
-
+- Vue.js
+- Podcast
+- Weex
 ---
 
 ## Vue & Weex Podcast 活动总结
