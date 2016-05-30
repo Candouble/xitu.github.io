@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-20T07:36:37.882Z</updated>
+  <updated>2016-05-30T05:26:49.991Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue.js Podcast 活动总结</title>
+    <link href="http://yoursite.com/2016/05/25/vue-podcast/"/>
+    <id>http://yoursite.com/2016/05/25/vue-podcast/</id>
+    <published>2016-05-25T10:21:45.000Z</published>
+    <updated>2016-05-30T05:26:49.991Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/0062hZoFgw1f48kq8lf1kj31240mawfo.jpg&quot; alt=&quot;Vue.js&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Vue-amp-Weex-Podcast-活动音频&quot;&gt;&lt;a href=&quot;#Vue-amp-Weex-Podcast-活动音频&quot; class=&quot;headerlink&quot; title=&quot;Vue &amp;amp; Weex Podcast 活动音频&quot;&gt;&lt;/a&gt;Vue &amp;amp; Weex Podcast 活动音频&lt;/h2&gt;&lt;audio controls=&quot;controls&quot; style=&quot;width:700px;height:66px;&quot;&gt;&lt;br&gt;            &lt;source src=&quot;http://7xjzr6.com2.z0.glb.qiniucdn.com/Vue-Podcast-Release.mp3&quot; type=&quot;audio/mp3&quot;&gt;&lt;br&gt;            &lt;embed height=&quot;66px&quot; width=&quot;700px&quot; src=&quot;http://7xjzr6.com2.z0.glb.qiniucdn.com/Vue-Podcast-Release.mp3&quot;&gt;&lt;br&gt;&lt;/audio&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1eRF3oR4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;音频下载&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;本期要点&quot;&gt;&lt;a href=&quot;#本期要点&quot; class=&quot;headerlink&quot; title=&quot;本期要点&quot;&gt;&lt;/a&gt;本期要点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;小右带你了解 Vue.js 是因何而出现，并在什么时候突然被大家关注并获得极大的反响&lt;/li&gt;
+&lt;li&gt;Vue.js 2.0 有哪些重要更新？代码结构发生了哪些重要变化？库是如何变小的？Virtual 在 2.0 里如何使用？为什么要语法收敛？以及流处理的后端渲染。&lt;/li&gt;
+&lt;li&gt;勾股让你了解阿里最新开源 Weex 是怎样从一个内部项目进入到开源世界，它在什么地方借鉴了 Vue 的优点，而背后又解决了淘宝里哪些重要的问题。&lt;/li&gt;
+&lt;li&gt;和另外几个主流前端框架 React.js / Angular.js 等等相比，Vue.js 的优势是什么，未来又会做哪些重要的改进和提升？&lt;/li&gt;
+&lt;li&gt;对于越来越复杂的 Web 世界，和一片火热的 JavaScript 生态，我们应该如何做技术选择？怎样锻炼自己的能力？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vuejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vue.js 官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://alibaba.github.io/weex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Weex 官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vuejs/awesome-vue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Awesome Vue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vuejs/vuex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vuex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.patreon.com/evanyou&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Donation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://forum.vuejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vue Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://elm-lang.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Elm 官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vux.li/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/0062hZoFgw1f48kq8lf1kj31240mawfo.jpg&quot; alt=&quot;Vue.js&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Vue-amp-Weex-Podcast-活动音频&quot;&gt;&lt;a href=
+    
+    </summary>
+    
+    
+      <category term="Vue.js" scheme="http://yoursite.com/tags/Vue-js/"/>
+    
+      <category term="Podcast" scheme="http://yoursite.com/tags/Podcast/"/>
+    
+      <category term="Weex" scheme="http://yoursite.com/tags/Weex/"/>
+    
+  </entry>
   
   <entry>
     <title>网页布局那些事 -- flex 布局简介</title>
